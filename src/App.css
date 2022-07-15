@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.ChangeThemeButton {
+  position: fixed;
+  z-index: 100;
+  width: 250px;
+  height: 60px;
+  background-color: black;
+  color: #fff;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  line-height: 55px;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  transition: 0.2s;
+  user-select: none;
+}
+.ChangeThemeButton:hover {
+  width: 260px;
+  height: 62px;
+  bottom: 59px;
+  font-size: 26px;
+  border-radius: 31px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.burger_background1 {
+  background-image: url(./images/burger-background4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  transition: 0.2s;
+}
+.burger_background2 {
+  background-image: url(./images/burger-background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  transition: 0.2s;
+}
+
+.welcome {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.UIbutton1 {
+  width: 150px;
+  height: 150px;
+  border: 15px solid black;
+  background-color: #61dafb;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 150;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 30px;
+  line-height: 150%;
+  transition: 0.1s;
+  overflow: hidden;
+}
+.UIbutton1:hover {
+  width: 160px;
+  height: 160px;
+  font-size: 31px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.UIbutton1 span {
+  margin-top: 17%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  user-select: none;
+}
+
+.buy {
+  left: 14%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+.buy:hover {
+  left: 13.5%;
+  top: 59.5%;
+}
+
+.past_orders {
+  right: 14%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+.past_orders:hover {
+  right: 13.5%;
+  top: 59.5%;
+}
+
+.UIbutton2 {
+  display: inline-block;
+  width: 200px;
+  height: 60px;
+  line-height: 55px;
+  z-index: 150;
+  border: 3px solid #fff;
+  color: white;
+  position: fixed;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.1s;
+  overflow: hidden;
+}
+
+.UIbutton2 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  user-select: none;
+}
+
+.UIbutton2:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  right: -10px;
+  bottom: 0;
+  transform: rotate(-4deg);
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.UIbutton2:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buy2 {
+  left: 14%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.past_orders2 {
+  right: 14%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+/* Buy page */
+.OrderBackground {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.OrderBackground:after {
+  content: "";
+  background-image: linear-gradient(-30deg, #ff112d, #ff8e15);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.Order_back_image {
+  position: fixed;
+  background-image: url("./images/6.jpg");
+  background-size: cover;
+  filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.Order_back_image2 {
+  position: fixed;
+  background-image: url("./images/7.jpg");
+  background-size: cover;
+  filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.BackToHome {
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 40px;
+  border: 4px solid #fff;
+  color: #fff;
+  transform: translate(30px, 30px);
+  user-select: none;
+  z-index: 1;
+}
+.BackToHome:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  right: -10px;
+  bottom: 0;
+  transform: rotate(-4deg);
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.BackToHome:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.EnterName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  padding-top: 80px;
+}
+.EnteredName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+  padding-top: 50px;
+  transition: 0.3s;
+}
+.EnterNameArea {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0 10px 0 10px;
+}
+.NameSubmit {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  height: 25px;
+}
+.Instruction {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}
+
+#title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  width: 60%;
+  margin-left: 20%;
+}
+#ingredients {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#ingredients td,
+#ingredients th {
+  border-bottom: 3px solid #000;
+  padding: 8px;
+}
+#ingredients tr:nth-child(1) {
+  font-weight: 800;
+}
+#ingredients tr:hover {
+  background-color: #ff793b;
+}
+.Check {
+  width: 20px;
+  height: 20px;
+}
+.NumberSpecify {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 80px;
+  height: 25px;
+  font-size: 30px;
+}
+
+.TotalAmount {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.PlaceOrder {
+  width: 18%;
+  margin-left: 41%;
+  height: 80px;
+  background-color: #000;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 75px;
+  border-radius: 40px;
+  margin-top: 30px;
+  user-select: none;
+  transition: 0.1s;
+}
+.PlaceOrder:hover {
+  width: 18.5%;
+  margin-left: 40.75%;
+  height: 82px;
+  font-size: 32px;
+  line-height: 75px;
+  border-radius: 41px;
+  margin-top: 28px;
+}
+
+/* PastOrder  */
+.Display {
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 60%;
+  margin-left: 20%;
+}
+#ingredients1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* width: 60%;
+  margin-left: 20%; */
+}
+#ingredients1 td,
+#ingredients1 th {
+  border-bottom: 3px solid #000;
+  padding: 8px;
+}
+#ingredients1 tr:nth-child(1) {
+  font-weight: 800;
+  font-size: 25px;
+}
+#ingredients1 tr:hover {
+  background-color: #ff793b;
+}
+
+.ListHeading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  padding-top: 50px;
+}
+.ListDisplay {
+  width: 60%;
+  margin-left: 20%;
+  background-color: #61dafb;
+  height: 500px;
+  margin-top: 10px;
+}
+.Search {
+  width: 28%;
+  margin-left: 36%;
+  height: 80px;
+  background-color: #000;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 75px;
+  border-radius: 40px;
+  margin-top: 30px;
+  user-select: none;
+  transition: 0.1s;
+}
+.Search:hover {
+  width: 28.5%;
+  margin-left: 35.75%;
+  height: 82px;
+  font-size: 31px;
+  line-height: 75px;
+  border-radius: 41px;
+  margin-top: 28px;
+}
+
+.SearchByName {
+  width: 70%;
+  height: 75%;
+  position: fixed;
+  top: 11.5%;
+  left: 15%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Display2 {
+  text-align: center;
+  color: white;
+}
+#ingredients2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  border-collapse: collapse;
+  color: white;
+  border: 3px solid #fff;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#ingredients2 td,
+#ingredients2 th {
+  border: 3px solid #fff;
+  padding: 8px;
+}
+#ingredients2 tr:nth-child(1) {
+  font-weight: 800;
+  font-size: 30px;
+}
+#ingredients2 tr:hover {
+  background-color: #ff793b;
+}
+
+#HiddenDiv {
+  display: none;
+}
+#ShowDiv {
+  display: block;
+}
+.NoResult {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  padding-top: 50px;
+}
+.NoResult span:hover {
+  color: rgb(184, 184, 184);
+}

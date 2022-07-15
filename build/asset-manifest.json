@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-API-Project/static/css/main.16d7fca9.chunk.css",
+    "main.js": "/React-API-Project/static/js/main.a05fc9dc.chunk.js",
+    "main.js.map": "/React-API-Project/static/js/main.a05fc9dc.chunk.js.map",
+    "runtime-main.js": "/React-API-Project/static/js/runtime-main.638256a6.js",
+    "runtime-main.js.map": "/React-API-Project/static/js/runtime-main.638256a6.js.map",
+    "static/js/2.81d50f44.chunk.js": "/React-API-Project/static/js/2.81d50f44.chunk.js",
+    "static/js/2.81d50f44.chunk.js.map": "/React-API-Project/static/js/2.81d50f44.chunk.js.map",
+    "index.html": "/React-API-Project/index.html",
+    "precache-manifest.edbab2607460998d96e1ef80bbd2f68b.js": "/React-API-Project/precache-manifest.edbab2607460998d96e1ef80bbd2f68b.js",
+    "service-worker.js": "/React-API-Project/service-worker.js",
+    "static/css/main.16d7fca9.chunk.css.map": "/React-API-Project/static/css/main.16d7fca9.chunk.css.map",
+    "static/js/2.81d50f44.chunk.js.LICENSE.txt": "/React-API-Project/static/js/2.81d50f44.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React-API-Project/static/media/burger-background4.b4dff14d.png",
+    "static/media/heading.png": "/React-API-Project/static/media/heading.9686fd5a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.638256a6.js",
+    "static/js/2.81d50f44.chunk.js",
+    "static/css/main.16d7fca9.chunk.css",
+    "static/js/main.a05fc9dc.chunk.js"
+  ]
+}
